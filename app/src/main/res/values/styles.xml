@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="android:fontFamily">@font/custom_font</item>-->
+<!--        <item name="fontFamily">@font/custom_font</item>-->
+    </style>
+
+    <style name="Header" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Header.Small">
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+</resources>

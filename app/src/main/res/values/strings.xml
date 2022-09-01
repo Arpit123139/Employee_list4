@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Employee Example</string>
+    <string name="company_name">Employee Star Pvt. Ltd.</string>
+
+    <string name="save_employee">Save</string>
+    <string name="delete_employee">Delete</string>
+    <string name="enter_employee_name">Enter employee name</string>
+    <string name="employee_photo">Employee Photo</string>
+    <string name="gender">Gender</string>
+    <string name="role">Role</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="age">Age</string>
+
+    <string name="export_data">Export employee data</string>
+    <string name="import_data">Import employee data</string>
+
+    <string name="years">%1$d years</string>
+    <string name="no_app_csv">No app to read CSV file</string>
+    <string name="latest_employee_name">Latest employee name</string>
+    <string name="latest_employee">The name of latest employee is: %1$s</string>
+    <string name="no_employee_added">No employee added yet</string>
+    <string name="share_employee_data">Share Employee data</string>
+    <string name="share_text">Employee Data\nName: %1$s\nRole: %2$s\nAge: %3$d\nGender: %4$s</string>
+    <string name="create_file_error">Error occurred creating file: %1$s</string>
+
+    <string name="share_data_title">Choose the app to send data</string>
+    <string name="email">Email</string>
+    <string name="responsibilities">Responsibilities</string>
+    <string name="experience">Experience</string>
+    <string name="education">Education</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="take_photo_from_camera">Take photo from camera</string>
+    <string name="pick_photo_from_gallery">Pick photo from gallery</string>
+
+    <string name="employee_validate_error_message">Please enter the %1$s of employee</string>
+
+    <string name="no_db_record">There are no employees to show.\n
+        Please add an employee by clicking the bottom right button</string>
+    <string name="edit_employee">Edit Employee</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

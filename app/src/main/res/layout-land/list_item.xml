@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/normal_margin"
+    app:strokeWidth="1dp"
+    app:strokeColor="#cccccc"
+    app:cardCornerRadius="3dp"
+    app:contentPadding="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/edit_employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/edit_employee"
+                app:layout_constraintBottom_toBottomOf="@+id/employee_photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/employee_photo"
+                app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+            <ImageView
+                android:id="@+id/employee_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/employee_photo"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@+id/employee_role"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/blank_photo"
+                tools:srcCompat="@drawable/blank_photo" />
+
+            <TextView
+                android:id="@+id/employee_name"
+                style="@style/Header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                app:layout_constraintStart_toEndOf="@+id/employee_photo"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="John Doe" />
+
+            <TextView
+                android:id="@+id/employee_role"
+                style="@style/Header.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/normal_margin"
+                app:layout_constraintStart_toEndOf="@+id/employee_photo"
+                app:layout_constraintTop_toBottomOf="@+id/employee_name"
+                tools:text="Manager" />
+
+            <TextView
+                android:id="@+id/employee_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                app:layout_constraintStart_toStartOf="@+id/employee_role"
+                app:layout_constraintTop_toBottomOf="@+id/employee_role"
+                tools:text="42 years" />
+
+            <TextView
+                android:id="@+id/employee_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/employee_age"
+                app:layout_constraintTop_toBottomOf="@+id/employee_age"
+                tools:text="Male" />
+
+            <TextView
+                android:id="@+id/employee_responsibility"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                app:layout_constraintBottom_toBottomOf="@+id/employee_photo"
+                app:layout_constraintEnd_toStartOf="@+id/edit_employee"
+                app:layout_constraintStart_toEndOf="@+id/barrier"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate est in mattis luctus. Duis eleifend in tortor ut vulputate. Integer sagittis porttitor justo id lobortis. Donec iaculis nec elit nec viverra. Proin cursus felis id felis laoreet, in imperdiet velit pharetra. Suspendisse pulvinar dapibus tristique. Nunc vitae dignissim erat. Nullam placerat odio massa, iaculis dapibus sem feugiat a. Pellentesque non ligula lorem. Proin convallis urna eget suscipit viverra." />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="end"
+                app:constraint_referenced_ids="employee_name,employee_age"
+                tools:layout_editor_absoluteX="731dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

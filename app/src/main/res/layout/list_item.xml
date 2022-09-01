@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/normal_margin"
+    app:strokeWidth="1dp"
+    app:strokeColor="#cccccc"
+    app:cardCornerRadius="3dp"
+    app:contentPadding="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="false">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/employee_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/medium_margin"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/employee_photo"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/employee_role"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/blank_photo"
+            tools:srcCompat="@drawable/blank_photo" />
+
+        <TextView
+            android:id="@+id/employee_name"
+            style="@style/Header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginTop="@dimen/medium_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/employee_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="John Doe" />
+
+        <TextView
+            android:id="@+id/employee_role"
+            style="@style/Header.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_marginLeft="@dimen/normal_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/employee_photo"
+            app:layout_constraintTop_toBottomOf="@+id/employee_name"
+            tools:text="Manager" />
+
+        <TextView
+            android:id="@+id/employee_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_margin"
+            app:layout_constraintStart_toStartOf="@+id/employee_role"
+            app:layout_constraintTop_toBottomOf="@+id/employee_role"
+            tools:text="42 years" />
+
+        <TextView
+            android:id="@+id/employee_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/large_margin"
+            android:layout_marginLeft="@dimen/large_margin"
+            app:layout_constraintStart_toEndOf="@+id/employee_age"
+            app:layout_constraintTop_toTopOf="@+id/employee_age"
+            tools:text="Male" />
+
+        <ImageButton
+            android:id="@+id/edit_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/edit_employee"
+            app:layout_constraintBottom_toBottomOf="@+id/employee_photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/employee_photo"
+            app:layout_constraintVertical_bias="0.482"
+            app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
